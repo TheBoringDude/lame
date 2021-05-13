@@ -22,14 +22,15 @@
   </div>
 </template>
 
-<script>
-import apps from "../../lame.apps.json";
+<script lang="ts">
+import Vue from "vue";
+import apps from "~/lame.apps.json";
 
-export default {
+export default Vue.extend({
   data: () => {
     return {
-      apps
+      apps: Object.entries(apps).map(([key, value]) => value)
     };
   }
-};
+});
 </script>
