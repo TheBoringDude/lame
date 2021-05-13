@@ -1,6 +1,8 @@
 <template>
   <nav class="py-4 w-11/12 mx-auto flex items-center justify-between">
-    <h1 class="text-3xl font-black tracking-wide text-green-500">lame</h1>
+    <h1 class="text-3xl font-black tracking-wide text-green-500">
+      <NuxtLink to="/">lame</NuxtLink>
+    </h1>
 
     <ul class="flex items-center">
       <li class="text-lg mx-6">
