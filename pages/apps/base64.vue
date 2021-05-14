@@ -4,7 +4,7 @@
 
     <hr />
 
-    <div class="w-5/6 mx-auto my-12 text-center">
+    <AppsContainer>
       <select
         v-model="mode"
         @change="resetInputOutput"
@@ -35,7 +35,7 @@
           </textarea>
         </div>
       </div>
-    </div>
+    </AppsContainer>
   </div>
 </template>
 

@@ -3,5 +3,10 @@
     "title": "Base64 Encoder & Decoder",
     "url": "base64",
     "description": "A base64 string encode and decoder web app."
+  },
+  "rssparser": {
+    "title": "A Simple RSS Worker Parser",
+    "url": "rss-parser",
+    "description": "Frontend for the the simple-rss-worker."
   }
 }
