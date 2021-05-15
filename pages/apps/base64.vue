@@ -8,7 +8,7 @@
       <select
         v-model="mode"
         @change="resetInputOutput"
-        class="mb-4 py-2 px-6 rounded-lg border-2 focus:outline-none focus:border-green-300 bg-gray-50"
+        class="mb-4 py-2 px-6 rounded-lg border-2 focus:outline-none focus:border-green-300 bg-white text-green-900"
       >
         <option value="decode">Decode</option>
         <option value="encode">Encode</option>
