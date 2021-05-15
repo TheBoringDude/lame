@@ -1,6 +1,6 @@
 <template>
   <div class="my-12">
-    <ul class="grid grid-cols-2 gap-8">
+    <ul class="grid grid-cols-1 md:grid-cols-2 gap-8 2xl:grid-cols-3">
       <li
         :key="index"
         v-for="(app, index) in apps"

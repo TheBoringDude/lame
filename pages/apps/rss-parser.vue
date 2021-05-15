@@ -17,19 +17,20 @@
         </strong>
       </div>
 
-      <div class="w-2/3 mx-auto">
+      <div class="w-full sm:w-4/5 lg:w-3/4 xl:w-2/3 mx-auto">
         <div class="flex flex-col my-4">
           <label for="rss-url-input" class="mb-1">Enter a RSS URL:</label>
-          <div class="flex">
+          <div class="flex flex-col sm:flex-row">
             <input
               v-model="rssUrl"
               type="url"
+              placeholder="enter the rss url to query"
               class="w-full py-2 px-3 rounded-lg border-2 focus:border-green-300 hover:border-green-300 focus:outline-none"
             />
             <button
               :disabled="querying"
               @click="parseQuery"
-              class="py-2 px-6 bg-green-400 hover:bg-green-500 rounded-lg ml-2 text-white"
+              class="mt-1 sm:mt-0 py-2 px-6 bg-green-400 hover:bg-green-500 rounded-lg ml-2 text-white"
             >
               {{ queryText }}
             </button>

@@ -14,13 +14,14 @@
         <option value="encode">Encode</option>
       </select>
 
-      <div class="grid grid-cols-2 gap-4 text-left">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-left">
         <div class="flex flex-col">
           <label class="mb-1" for="string-input"
             >base64 string to {{ mode }}</label
           >
           <textarea
             v-model="input"
+            :placeholder="'enter the string to ' + mode"
             @input="handleModeChange"
             class="border-2 rounded-lg hover:border-green-300 focus:border-green-300 focus:outline-none h-56 p-4"
           ></textarea>
@@ -29,6 +30,7 @@
           <label class="mb-1" for="output">output:</label>
           <textarea
             :value="output"
+            placeholder="output..."
             readonly
             class="border-2 rounded-lg hover:border-green-300 focus:border-green-300 focus:outline-none h-56 p-4"
           >
