@@ -25,7 +25,7 @@
               v-model="rssUrl"
               type="url"
               placeholder="enter the rss url to query"
-              class="w-full py-2 px-3 rounded-lg border-2 focus:border-green-300 hover:border-green-300 focus:outline-none"
+              class="text-black w-full py-2 px-3 rounded-lg border-2 focus:border-green-300 hover:border-green-300 focus:outline-none"
             />
             <button
               :disabled="querying"
@@ -42,7 +42,7 @@
           <textarea
             :value="output"
             readonly
-            class="py-2 px-3 rounded-lg border-2 focus:border-green-300 hover:border-green-300 focus:outline-none h-72"
+            class="text-black py-2 px-3 rounded-lg border-2 focus:border-green-300 hover:border-green-300 focus:outline-none h-72"
           ></textarea>
         </div>
       </div>

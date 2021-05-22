@@ -23,7 +23,7 @@
             v-model="input"
             :placeholder="'enter the string to ' + mode"
             @input="handleModeChange"
-            class="border-2 rounded-lg hover:border-green-300 focus:border-green-300 focus:outline-none h-56 p-4"
+            class="text-black border-2 rounded-lg hover:border-green-300 focus:border-green-300 focus:outline-none h-56 p-4"
           ></textarea>
         </div>
         <div class="flex flex-col">
@@ -32,7 +32,7 @@
             :value="output"
             placeholder="output..."
             readonly
-            class="border-2 rounded-lg hover:border-green-300 focus:border-green-300 focus:outline-none h-56 p-4"
+            class="text-black border-2 rounded-lg hover:border-green-300 focus:border-green-300 focus:outline-none h-56 p-4"
           >
           </textarea>
         </div>
