@@ -6,7 +6,7 @@ describe("Footer", () => {
   const footer = wrapper.find("footer").find("p");
 
   test("has copyright string", () => {
-    expect(footer.text().includes("© TheBoringDude")).toBe(true);
+    expect(footer.text().includes("TheBoringDude")).toBe(true);
   });
 
   test("has current year", () => {

@@ -5,14 +5,16 @@
     </h1>
 
     <ul class="flex items-center">
-      <li class="md:text-lg mx-3 md:mx-6">
+      <li class="mx-3 md:mx-6">
         <NuxtLink class="hover:text-green-600" to="/apps"
           >See All Apps</NuxtLink
         >
       </li>
-      <li class="md:text-lg ml-3 md:ml-6">
+      <li class="ml-3 md:ml-6">
         <a
           class="hover:text-green-600"
+          target="_blank"
+          rel="noreferrer"
           href="https://github.com/TheBoringDude/lame"
           >Github</a
         >
