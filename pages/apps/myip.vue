@@ -9,20 +9,26 @@
       <div
         class="bg-white p-6 rounded-lg text-black text-left max-w-xl mx-auto overflow-x-auto"
       >
-        <pre><code>{{ JSON.stringify(ip, null, 4) }}</code></pre>
+        <pre><code v-if="$fetchState.pending">fetching...</code><code v-else>{{ JSON.stringify(ip, null, 4) }}</code></pre>
       </div>
     </AppsContainer>
   </div>
 </template>
 
 <script lang="ts">
-import "@nuxt/http";
 import Vue from "vue";
 
 export default Vue.extend({
-  async asyncData({ $http }) {
-    const ip = await $http.$get("https://my-ip.theboringdude.workers.dev/");
-    return { ip };
-  }
+  data() {
+    return {
+      ip: {}
+    };
+  },
+  async fetch() {
+    this.ip = await fetch(
+      "https://my-ip.theboringdude.workers.dev/"
+    ).then(res => res.json());
+  },
+  fetchOnServer: false
 });
 </script>
