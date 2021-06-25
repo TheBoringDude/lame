@@ -8,5 +8,10 @@
     "title": "A Simple RSS Worker Parser",
     "url": "rss-parser",
     "description": "Frontend for the the simple-rss-worker."
+  },
+  "myip": {
+    "title": "Get Your IP Info",
+    "url": "myip",
+    "description": "See details about your IP. "
   }
 }
