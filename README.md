@@ -1,20 +1,14 @@
-# lame
+<div align="center">
+  <h1><a href="https://lame-app.vercel.app/" rel="noreferrer" target="_blank">lame</a></h1>
+  <p>Just a collection of simple web apps.</p>
+</div>
 
-## Build Setup
+## APPS
 
-```bash
-# install dependencies
-$ yarn install
+- Base64 Encoder & Decoder
+- A Simple RSS Worker Parser
+- Get Your IP Info
 
-# serve with hot reload at localhost:3000
-$ yarn dev
+##
 
-# build for production and launch server
-$ yarn build
-$ yarn start
-
-# generate static project
-$ yarn generate
-```
-
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+#### &copy; 2021 | TheBoringDude
